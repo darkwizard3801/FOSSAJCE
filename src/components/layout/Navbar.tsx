@@ -44,7 +44,7 @@ export function Navbar() {
               <img 
                 src="https://res.cloudinary.com/du8ogkcns/image/upload/v1733819826/WhatsApp_Image_2024-12-03_at_13.28.30_0b17ffac_si28lc.jpg" 
                 alt="FOSS Club Logo" 
-                className="h-8 w-auto"
+                className="h-12 w-auto"
               />
             </Link>
           </div>

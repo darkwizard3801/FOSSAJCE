@@ -13,9 +13,9 @@ const team = [
   {
     name: 'Akhil Augustine',
     role: 'Technical Lead',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-    github: 'https://github.com',
-    linkedin: 'https://www.linkedin.com',
+    image: 'https://res.cloudinary.com/du8ogkcns/image/upload/v1733820283/1723967485122_i2nzct.jpg',
+    github: 'https://github.com/akhilaugustinegit',
+    linkedin: 'https://www.linkedin.com/in/akhil--augustine/?originalSubdomain=in',
     email: 'akhilaugustine2025@mca.ajce.in',
   },
   {
