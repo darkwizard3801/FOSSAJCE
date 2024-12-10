@@ -51,15 +51,75 @@ export function Hero() {
         >
           <div className="flex flex-col items-center">
             <Github className="h-8 w-8 mb-2" />
-            <span className="text-sm">1000+ Commits</span>
+            <span className="text-sm">
+              {/** Start counting from 50 to 1000 */}
+              {(() => {
+                const [count, setCount] = React.useState(50);
+                React.useEffect(() => {
+                  const interval = setInterval(() => {
+                    setCount((prev) => {
+                      if (prev < 1000) {
+                        return prev + 20; // Increment by 20
+                      } else {
+                        clearInterval(interval);
+                        return 1000; // Ensure it ends at 1000
+                      }
+                    });
+                  }, 50); // 50 ms interval
+                  return () => clearInterval(interval);
+                }, []);
+                return count;
+              })()}
+              + Commits
+            </span>
           </div>
           <div className="flex flex-col items-center">
             <Code2 className="h-8 w-8 mb-2" />
-            <span className="text-sm">50+ Projects</span>
+            <span className="text-sm">
+              {/** Start counting from 8 for projects */}
+              {(() => {
+                const [count, setCount] = React.useState(8);
+                React.useEffect(() => {
+                  const interval = setInterval(() => {
+                    setCount((prev) => {
+                      if (prev < 50) { // Count up to 50 for projects
+                        return prev + 2; // Increment by 2
+                      } else {
+                        clearInterval(interval);
+                        return 50; // Ensure it ends at 50
+                      }
+                    });
+                  }, 50); // 50 ms interval
+                  return () => clearInterval(interval);
+                }, []);
+                return count;
+              })()}
+              + Projects
+            </span>
           </div>
           <div className="flex flex-col items-center">
             <Terminal className="h-8 w-8 mb-2" />
-            <span className="text-sm">200+ Members</span>
+            <span className="text-sm">
+              {/** Start counting from 30 for members */}
+              {(() => {
+                const [count, setCount] = React.useState(30);
+                React.useEffect(() => {
+                  const interval = setInterval(() => {
+                    setCount((prev) => {
+                      if (prev < 200) { // Count up to 200 for members
+                        return prev + 3; // Increment by 3
+                      } else {
+                        clearInterval(interval);
+                        return 200; // Ensure it ends at 200
+                      }
+                    });
+                  }, 50); // 50 ms interval
+                  return () => clearInterval(interval);
+                }, []);
+                return count;
+              })()}
+              + Members
+            </span>
           </div>
         </motion.div>
       </div>
