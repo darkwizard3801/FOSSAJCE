@@ -2,14 +2,26 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Lock } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { useNavigate } from 'react-router-dom';
+import { mockUsers } from '@/utils/mockUsers'; // Import the mock user data
 
 export function Login() {
-  const [email, setEmail] = useState('');
+  const [id, setId] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle login logic here
+    
+    // Validate ID and password
+    const user = mockUsers.find(user => user.id === id && user.password === password);
+    
+    if (user) {
+      // Redirect to the blog post creation page
+      navigate('/add-blog');
+    } else {
+      alert('Invalid ID or password. Please try again.'); // Alert for invalid login
+    }
   };
 
   return (
@@ -31,14 +43,14 @@ export function Login() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
-              Email
+            <label htmlFor="id" className="block text-sm font-medium text-gray-300 mb-1">
+              ID
             </label>
             <input
-              id="email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              id="id"
+              type="text"
+              value={id}
+              onChange={(e) => setId(e.target.value)}
               className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               required
             />
