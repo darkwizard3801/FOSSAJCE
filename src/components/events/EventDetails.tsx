@@ -8,7 +8,9 @@ interface EventDetailsProps {
   event: {
     id: number;
     title: string;
-    date: Date;
+    startDate?: Date;
+    endDate?: Date;
+    date?: Date;
     time: string;
     location: string;
     type: string;
