@@ -36,9 +36,9 @@ export function Contact() {
               <div>
                 <h3 className="text-lg font-semibold text-white mb-1">Location</h3>
                 <p className="text-gray-300">
-                  Computer Science Building<br />
-                  University Campus<br />
-                  City, State 12345
+                  Amal Jyothi College of Engineering<br />
+                  Kanjirapally<br />
+                  Kottayam, Kerala 686518
                 </p>
               </div>
             </div>
@@ -59,7 +59,7 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white mb-1">Phone</h3>
-                <p className="text-gray-300">(123) 456-7890</p>
+                <p className="text-gray-300">094472 90939</p>
               </div>
             </div>
           </motion.div>
