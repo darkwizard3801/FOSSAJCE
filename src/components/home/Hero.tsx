@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Code2, Terminal, Github } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { Link } from 'react-router-dom';
 
 export function Hero() {
   return (
@@ -30,11 +31,14 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="group">
               <Terminal className="mr-2 h-5 w-5 transition-transform group-hover:rotate-12" />
+              <Link to="/blog">
               Get Started
+              </Link>
             </Button>
-            <Button size="lg" variant="secondary">
+            <Button size="lg" variant="secondary" onClick={() => window.open('https://github.com', '_blank')}>
               <Code2 className="mr-2 h-5 w-5" />
               View Projects
+              
             </Button>
           </div>
         </motion.div>
