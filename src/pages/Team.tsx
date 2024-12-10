@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Github2 as Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const team = [
   {
@@ -15,17 +14,17 @@ const team = [
     name: 'Akhil Augustine',
     role: 'Technical Lead',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-    github: '',
-    linkedin: '#',
+    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com',
     email: 'akhilaugustine2025@mca.ajce.in',
   },
   {
     name: 'Binumon Joseph',
     role: 'Event Coordinator',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
-    github: '',
-    linkedin: '#',
-    email: 'emily@example.com',
+    image: 'https://res.cloudinary.com/du8ogkcns/image/upload/v1733818953/Screenshot_2024-12-10_135156_ddj3si.png',
+    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com',
+    email: 'binumonjosephk@amaljyothi.ac.in',
   },
   {
     name: 'Yadu Krishna',
