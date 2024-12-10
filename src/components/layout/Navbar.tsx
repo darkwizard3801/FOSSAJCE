@@ -39,9 +39,13 @@ export function Navbar() {
           <div className="flex items-center">
             <Link
               to="/"
-              className="text-2xl font-bold text-purple-500 hover:text-purple-400"
+              className="flex items-center space-x-2 text-purple-500 hover:text-purple-400"
             >
-              FOSS Club
+              <img 
+                src="https://res.cloudinary.com/du8ogkcns/image/upload/v1733819826/WhatsApp_Image_2024-12-03_at_13.28.30_0b17ffac_si28lc.jpg" 
+                alt="FOSS Club Logo" 
+                className="h-8 w-auto"
+              />
             </Link>
           </div>
 
