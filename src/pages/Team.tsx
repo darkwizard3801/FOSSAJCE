@@ -1,39 +1,55 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github2 as Github, Linkedin, Mail } from 'lucide-react';
 
 const team = [
   {
-    name: 'Sarah Johnson',
+    name: 'Mathews Mathukutty',
     role: 'Club President',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
-    github: '#',
-    linkedin: '#',
-    email: 'sarah@example.com',
+    image: 'https://avatars.githubusercontent.com/u/86302350?v=4',
+    github: 'https://github.com/MatthewsM2',
+    linkedin: 'https://www.linkedin.com',
+    email: 'mathewsmathukutty2025@mca.ajce.in',
   },
   {
-    name: 'Michael Chen',
+    name: 'Akhil Augustine',
     role: 'Technical Lead',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-    github: '#',
+    github: '',
     linkedin: '#',
-    email: 'michael@example.com',
+    email: 'akhilaugustine2025@mca.ajce.in',
   },
   {
-    name: 'Emily Rodriguez',
+    name: 'Binumon Joseph',
     role: 'Event Coordinator',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
-    github: '#',
+    github: '',
     linkedin: '#',
     email: 'emily@example.com',
   },
   {
-    name: 'David Kim',
+    name: 'Yadu Krishna',
     role: 'Development Lead',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
-    github: '#',
-    linkedin: '#',
-    email: 'david@example.com',
+    image: 'https://res.cloudinary.com/du8ogkcns/image/upload/v1733817731/D_73899m_ic7jjg.jpg',
+    github: 'https://github.com/yaduk2001',
+    linkedin: 'https://www.linkedin.com/in/yadu-krishna-ks-478393193',
+    email: 'yadukrishna2025@mca.ajce.in',
+  },
+  {
+    name: 'Kamal sankar M',
+    role: 'Development Lead',
+    image: 'https://res.cloudinary.com/du8ogkcns/image/upload/v1733817684/photo_2024-12-10_13-27-46_p9tbym.jpg',
+    github: 'https://github.com/SantaKoska',
+    linkedin: 'https://www.linkedin.com/in/kamal-sankar-m-918946214/',
+    email: 'kaamlsankarm2025@mca.ajce.in',
+  },
+  {
+    name: 'Alen Siby',
+    role: 'Technical Lead ',
+    image: 'https://res.cloudinary.com/du8ogkcns/image/upload/v1733817747/passport_photo_fvgjtg.jpg',
+    github: 'https://github.com/darkwizard3801',
+    linkedin: 'www.linkedin.com/in/alen-siby',
+    email: 'alensiby2025@mca.ajce.in',
   },
 ];
 
